@@ -1,0 +1,266 @@
+/* Conversation components for the collect-and-retrieve journey. */
+.journey-feed{gap:18px;padding-bottom:24px}
+.journey-feed .assistant-bubble{font-size:12px;line-height:1.8}
+.journey-feed .welcome-visual{margin-bottom:14px;min-height:82px}
+.journey-feed .welcome-visual>.dot-logo.welcome{width:59px;height:66px}
+.journey-feed .welcome-visual strong{font-size:14px}
+.journey-example{margin-top:14px;border-top:1px solid #f0f1ef;padding-top:12px}
+.journey-example button{font-size:11px;color:#587760;text-align:left;line-height:1.8;background:#f4f8f4;padding:8px 10px;border-radius:8px;width:100%}
+.assistant-bubble .journey-welcome-foot{font-size:10px;color:#949a95;margin:12px 0 0}
+.chat-header .chat-mine{display:flex;align-items:center;justify-content:center;flex-shrink:0;width:38px;height:38px;padding:8px;color:#333}
+.chat-header .chat-mine svg{width:21px;height:21px;stroke-width:1.7}
+.journey-card-heading{display:flex;align-items:center;gap:5px;font-size:11px;font-weight:550;color:#427158;margin-bottom:8px}
+.journey-card-heading>svg{width:13px;height:13px}
+.journey-card-heading .journey-text-link{margin-left:auto;color:#7f8a82;font-size:10px;font-weight:400}
+.journey-memory{background:#f3f8f3;border-radius:9px;padding:11px;margin-bottom:13px}
+.journey-tags{display:flex;flex-wrap:wrap;gap:5px}
+.journey-tags span{background:#e7f0e7;border-radius:4px;color:#4c7256;font-size:10px;padding:2px 7px}
+.journey-memory small{display:block;color:#8c988e;font-size:9px;margin-top:8px}
+.journey-recommendations{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:12px 0}
+.journey-rec-open{display:block;width:100%;min-width:0;padding:0;text-align:left;background:transparent;color:inherit;border:0}
+.journey-rec-open>.cover{display:block;width:100%;height:auto;aspect-ratio:4/5;border-radius:12px;overflow:hidden}
+.journey-rec-open>.cover img{display:block;width:100%;height:100%;object-fit:cover}
+.journey-rec-open .poster{height:100%;padding:10px;box-sizing:border-box;justify-content:center}
+.journey-rec-open .poster strong{font-size:16px;line-height:1.6}
+.journey-rec-open .poster small,.journey-rec-open .poster em{display:none}
+.journey-rec-copy{display:block;margin-top:7px;min-width:0}
+.journey-rec-copy strong{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:11px;font-weight:500;line-height:1.6}
+.journey-rec-copy small{display:block;color:#858e7f;font-size:9px;margin-top:4px;line-height:1.6}
+.journey-question{padding-top:12px;border-top:1px solid #eff0ec;margin-top:12px}
+.journey-question>strong{font-size:12px;font-weight:500}
+.journey-reply-toolbar{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-top:18px}
+.journey-reply-toolbar>div{display:flex;align-items:center;gap:7px}
+.journey-reply-toolbar button{display:flex;align-items:center;justify-content:center;width:29px;height:29px;padding:6px;border-radius:6px;background:#f5f5f5;color:#777}
+.journey-reply-toolbar button svg{width:17px;height:17px;stroke-width:1.6}
+.journey-reply-toolbar button.is-active{color:#e64862;background:#fff0f3}
+.journey-reply-toolbar button[data-action="reply-bookmark"].is-active svg{fill:#ffe1e6}
+.reply-copy-text{width:100%;min-height:260px;box-sizing:border-box;padding:12px;font:inherit;font-size:13px;line-height:1.8;border:1px solid #e7e7e7;border-radius:8px;resize:vertical}
+.reply-forward-preview{white-space:pre-wrap;max-height:220px;overflow:auto;font-size:12px;line-height:1.9;color:#666;padding:12px;background:#f7f8f5;border-radius:8px}
+.reply-forward-targets{display:flex;gap:12px;margin-top:18px}
+.reply-forward-targets button{display:flex;flex:1;flex-direction:column;align-items:center;gap:8px;font-size:12px;color:#555;padding:10px 5px}
+.reply-forward-targets svg{width:24px;height:24px}
+.bookmarked-replies{margin-bottom:22px}
+.bookmarked-replies h3{font-size:13px;font-weight:550}
+.bookmarked-replies article{padding:12px;background:#fff;border:1px solid #e8ece4;border-radius:9px;margin-top:9px}
+.bookmarked-replies p{font-size:11px;line-height:1.8;color:#67745d;margin:0 0 10px}
+.bookmarked-replies article>div{display:flex;justify-content:space-between;gap:10px}
+.bookmarked-replies button{font-size:10px;color:#7b8b6d}
+/* Saved content is for recognition and retrieval; management stays in the menu. */
+.journey-source{position:relative;border-bottom:1px solid #e8ece7;padding:15px 0;margin:0;background:transparent}
+.journey-source-open{display:block;width:100%;padding:0;text-align:left;color:#333;min-width:0}
+.journey-source-top{display:flex;gap:11px;align-items:center}
+.journey-source-top>.cover{width:48px;height:58px;border-radius:6px;flex-shrink:0;overflow:hidden}
+.journey-source-top>.cover img{width:100%;height:100%;object-fit:cover}
+.journey-source-top .poster{padding:4px}
+.journey-source-top .poster strong{font-size:9px}
+.journey-source-top .poster small,.journey-source-top .poster em{display:none}
+.journey-source-title{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:13px;font-weight:550;line-height:1.65;flex:1;min-width:0}
+.journey-source-reason{display:block;margin:9px 0 0;font-size:11px;line-height:1.8;color:#65745e;white-space:pre-wrap;overflow-wrap:anywhere}
+.journey-source-reason>span{font-size:10px;color:#929b8b;margin-right:7px}
+.journey-source-copy{display:block;flex:1;min-width:0}
+.has-management .journey-source-top{padding-right:30px}
+.journey-source-tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px;white-space:normal}
+.journey-source-tags>span{display:inline-block;font-size:9px;line-height:1.5;font-weight:400;color:#728369;background:#eef3ea;border-radius:4px;padding:2px 5px}
+.journey-source .journey-source-more{position:absolute;right:0;top:14px;display:flex;align-items:center;justify-content:center;width:28px;height:28px;padding:5px;color:#969e90}
+.journey-fragment-open{display:block;width:100%;text-align:left;padding:11px 0 0;color:inherit}
+.journey-source-more svg{width:18px;height:18px}
+.journey-fragment-kind{display:block;font-size:10px;color:#7c9070;margin-bottom:5px}
+.journey-source blockquote{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;margin:0 0 7px;padding:0 0 0 10px;border-left:2px solid #aec5a4;font-size:12px;line-height:1.8;color:#414b3d;white-space:pre-wrap}
+.assistant-bubble .journey-source{margin:7px 0}
+.journey-saved-link{font-size:11px;color:#638158;padding:4px 0;margin-top:3px}
+.assistant-bubble p.journey-save-confirmation{margin:0;font-size:12px;line-height:1.9;color:#465640}
+.shared-remark>span{display:block;font-size:9px;color:#8e8283;margin-bottom:2px}
+.shared-quote,.shared-remark{white-space:pre-wrap;overflow-wrap:anywhere}
+.source-removed{display:block;font-size:10px;color:#8d8985;margin-top:7px}
+.journey-source-detail h3{font-size:15px;line-height:1.7;margin:0 0 16px;color:#384132}
+.journey-source-detail blockquote{white-space:pre-wrap;font-size:13px;line-height:1.9;margin:0 0 18px;padding:0 0 0 12px;border-left:2px solid #aec5a4;color:#535d4d}
+.source-detail-reason{white-space:pre-wrap;font-size:13px;line-height:1.8;color:#596b50;margin:16px 0}
+.source-detail-reason>span{display:block;font-size:11px;color:#929b8b;margin-bottom:4px}
+.source-detail-meta{font-size:11px;color:#949c8c;line-height:1.8;margin:10px 0}
+.journey-source-detail .wide-btn{margin-top:20px}
+.source-remove{color:#c05262}
+.journey-material-intro{font-size:11px;color:#969c90;margin:8px 0 14px;line-height:1.8}
+.v3-section-head h2 small{color:#9aa28f;font-size:13px;font-weight:400;margin-left:4px}
+.journey-material-search{display:flex;gap:7px;align-items:center;background:#fff;border:1px solid #e9ebe6;border-radius:10px;padding:8px 10px}
+.journey-material-search svg{width:15px;height:15px;flex-shrink:0;color:#b1b7a8}
+.journey-material-search input{font-size:11px;flex:1;min-width:0;background:transparent;padding:3px 0}
+.journey-material-search button{font-size:11px;color:#e84b65;padding:3px}
+.journey-categories{display:flex;gap:6px;flex-wrap:wrap;margin:13px 0}
+.journey-categories button{font-size:10px;padding:5px 9px;border-radius:14px;border:1px solid #e9ebe5;background:#fff;color:#959b8c}
+.journey-categories button.active{background:#eef5eb;border-color:#e0eadd;color:#5c7852}
+.journey-search-summary{display:flex;align-items:center;gap:10px;justify-content:space-between;font-size:10px;color:#969d8c;margin:10px 0}
+.journey-search-summary button{font-size:10px;color:#8a997d;flex-shrink:0}
+.journey-resume{background:#fff;padding:12px 14px;border:1px solid #e6ecdf;border-radius:11px}
+.journey-resume>strong{font-size:12px;font-weight:550;color:#58724c}
+.journey-resume p{font-size:10px;line-height:1.8;color:#989f8c;margin:5px 0 8px}
+.journey-resume>div{display:flex;gap:14px}
+.journey-resume button{font-size:10px;color:#6e835d}
+.journey-share-comment{display:inline-flex;align-items:center;gap:4px;color:#809770;font-size:9px}
+.journey-share-comment svg{width:11px;height:11px}
+
+/* Keep the existing daytime phone UI; the context strip carries continuity. */
+.journey-entry-options{display:flex;flex-direction:column;gap:8px;margin:13px 0}
+.journey-entry-options button{text-align:left;padding:11px 12px;border:1px solid #e3e9e0;border-radius:9px;background:#f7faf5;color:#426a45}
+.journey-entry-options button+button{background:#fff;border-color:#eceee8;color:#535e50}
+.journey-entry-options strong{display:block;font-size:12px;font-weight:550}
+.journey-entry-options span{display:block;font-size:10px;color:#7a8573;margin-top:3px;line-height:1.6}
+/* The trip name owns this response; secondary actions live in the travel menu. */
+.search-continuation{padding:12px 13px;overflow:hidden}
+.search-continuation .search-assistant-top{gap:8px}
+.search-continuation .search-assistant-heading{flex:1;min-width:0;gap:7px}
+.search-trip-name{display:flex;align-items:center;gap:4px;min-width:0;text-align:left;padding:5px 0}
+.search-trip-name strong{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;font-weight:550;color:#4d5548}
+.trip-chevron{font-size:12px;color:#89927f;flex-shrink:0}
+.search-chat-link{font-size:11px;color:#e54460;white-space:nowrap;padding:7px 0;flex-shrink:0}
+.search-continuation p.search-brief{display:block;margin:8px 0 0;font-size:13px;line-height:1.8;color:#555b52}
+.trip-choices{display:flex;flex-direction:column;gap:2px;margin-bottom:10px}
+.trip-choice{width:100%;padding:13px 0;display:flex;align-items:center;gap:10px;border-bottom:1px solid #f0f1ee;text-align:left}
+.trip-choice .dot-logo{width:32px;height:32px;flex-shrink:0}
+.trip-choice>span:not(.dot-logo):not(.trip-selected){min-width:0;flex:1}
+.trip-choice strong{display:block;font-size:13px;font-weight:550;color:#41493c;overflow-wrap:anywhere}
+.trip-choice small{display:block;font-size:11px;color:#89917f;margin-top:4px}
+.trip-selected{color:#6e865d;font-size:11px;flex-shrink:0}
+.trip-memory-text{white-space:pre-wrap;font-size:13px;line-height:1.9;color:#606e54}
+.search-saved-inline{display:grid;grid-template-columns:1fr 12px;column-gap:6px;text-align:left;width:100%;margin-top:10px;border-left:2px solid #d7e3ce;padding:0 0 0 9px;color:#697c5e}
+.search-saved-inline span{grid-column:1;font-size:9px;color:#909989;line-height:1.6}
+.search-saved-inline strong{grid-column:1;font-size:10px;font-weight:400;line-height:1.65;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.search-saved-inline svg{grid-column:2;grid-row:1 / 3;align-self:center;width:12px;height:12px}
+.search-chat-context{text-align:center;font-size:10px;line-height:1.8;color:#87917f;margin:18px 0}
+.search-sample-note{font-size:9px;color:#989d96;margin:0 15px 9px}
+.journey-plan-basis{border-left:2px solid #a9c69f;padding:7px 10px;margin:12px 0;background:#f4f8f1;font-size:10px;color:#67805b;line-height:1.8}
+.plan-basis-note{font-size:11px;line-height:1.8;color:#75866b;margin:12px 0}
+.plan-source-missing{font-size:10px;line-height:1.7;color:#989c91}
+.plan-source-excerpt{display:block;max-width:180px;font-size:10px;line-height:1.8;color:#8b9484;margin-top:7px}
+button:focus-visible{outline:2px solid #47723e;outline-offset:3px}
+
+/* Memory is a short evolving paragraph, never a preference questionnaire. */
+.narrative-memory{padding:12px 13px;border:1px solid #e4ecdf;background:#f5f9f2}
+.assistant-bubble .narrative-memory p.memory-prose,.narrative-memory p.memory-prose{font-size:11px;line-height:1.9;margin:0;color:#52644a}
+.narrative-memory.expanded{margin:0 0 20px;padding:17px}
+.narrative-memory.expanded p.memory-prose{font-size:14px;line-height:1.95;color:#46563f}
+.narrative-memory.expanded .journey-card-heading{font-size:13px;margin-bottom:11px}
+.memory-update-form label{display:block;font-size:12px;color:#77836f;margin-bottom:9px}
+.memory-update-form textarea{width:100%;min-height:88px;padding:12px;border:1px solid #e5e9e1;border-radius:10px;background:#fafcf8;resize:vertical;font:inherit;font-size:13px;line-height:1.8;box-sizing:border-box;margin-bottom:13px}
+.assistant-bubble p.memory-history-receipt{font-size:10px;color:#8d9986;margin:0 0 8px}
+
+/* Editorial summary first; images serve as the underlying reading material. */
+.journey-summary ul{margin:10px 0;padding-left:16px}
+.journey-summary li{margin:8px 0;padding-left:1px;line-height:1.85}
+.journey-summary li::marker{color:#b2b9ac}
+.journey-summary li strong{font-weight:600;color:#384034}
+.assistant-bubble .journey-summary p{margin:0 0 9px}
+.assistant-bubble .journey-summary p.journey-summary-suggestion{margin:10px 0 0;color:#4b5e42}
+
+/* Phone itinerary: the route leads; context stays behind each day's disclosure. */
+.itinerary-plan{color:#292929}
+.itinerary-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding:3px 0 15px}
+.itinerary-heading h3{margin:0;font-size:21px;line-height:1.4;font-weight:650;letter-spacing:-.4px}
+.itinerary-heading p{margin:7px 0 0;font-size:11px;color:#777;line-height:1.6}
+.itinerary-heading>span{font-size:11px;color:#888;padding-top:7px}
+.itinerary-hint{font-size:11px;color:#888;margin:0 0 10px;line-height:1.7}
+.itinerary{background:#fff;border-radius:14px;padding:0 14px}
+.itinerary-day{position:relative}
+.itinerary-day:not(:last-child){border-bottom:1px solid #f0f0f0}
+.itinerary-day summary{display:flex;gap:13px;align-items:flex-start;list-style:none;cursor:pointer;padding:18px 0;min-height:85px;text-align:left}
+.itinerary-day summary::-webkit-details-marker,.itinerary-tools summary::-webkit-details-marker{display:none}
+.itinerary-number{display:flex;align-items:baseline;gap:2px;flex:0 0 43px;padding-top:1px;color:#888;white-space:nowrap}
+.itinerary-number small{font-size:9px}
+.itinerary-number b{font-size:24px;line-height:1.1;color:#e34159;font-weight:600;font-variant-numeric:tabular-nums}
+.itinerary-overview{flex:1;min-width:0}
+.itinerary-overview strong{display:block;font-size:14px;line-height:1.5;font-weight:600;overflow-wrap:anywhere}
+.itinerary-overview>span{display:block;font-size:12px;color:#777;line-height:1.65;margin-top:5px;overflow-wrap:anywhere}
+.itinerary-overview em{display:block;font-size:10px;font-style:normal;color:#a37b38;margin-top:5px}
+.itinerary-chevron{padding-top:3px;color:#999;flex-shrink:0}
+.itinerary-chevron svg,.itinerary-tools summary svg{width:14px;height:14px;transform:rotate(90deg)}
+.itinerary-day[open] .itinerary-chevron svg,.itinerary-tools[open] summary svg{transform:rotate(-90deg)}
+.itinerary-day[open] summary{padding-bottom:12px}
+.itinerary-detail{margin:0 0 18px 56px;border-top:1px solid #f2f2f2;padding-top:14px;overflow-wrap:anywhere}
+.itinerary-detail>div+div{margin-top:15px}
+.itinerary-detail h4{font-size:10px;font-weight:500;color:#888;margin:0 0 5px}
+.itinerary-detail p{font-size:12px;color:#555;line-height:1.8;margin:0}
+.itinerary-detail p+p{margin-top:6px}
+.itinerary-pending{border-left:2px solid #edcf92;padding-left:9px}
+.itinerary-detail .table-source{font-size:12px;white-space:normal;text-align:left;line-height:1.6;min-height:30px}
+.itinerary-detail .plan-source-excerpt{max-width:none;font-size:11px;line-height:1.8;color:#777;margin-top:5px}
+.itinerary-detail .plan-source-missing{color:#8a784f;font-size:11px}
+.itinerary-detail .itinerary-status{font-size:10px;color:#888;margin-top:13px}
+.itinerary-disclaimer{font-size:10px;line-height:1.8;color:#888;margin:14px 2px}
+.itinerary-actions{display:flex;gap:8px;align-items:center}
+.itinerary-actions>button,.itinerary-adopted{flex:1;min-width:0;min-height:40px;font-size:12px;white-space:normal}
+.itinerary-adopted{display:flex;gap:5px;align-items:center;justify-content:center;color:#747e71}
+.itinerary-adopted svg{width:15px;height:15px}
+.itinerary-tools{margin-top:14px;border-top:1px solid #eee}
+.itinerary-tools summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;min-height:44px;font-size:11px;color:#888}
+.itinerary-tools>div{display:flex;flex-direction:column;align-items:stretch;padding-bottom:6px}
+.itinerary-tools button{display:flex;align-items:center;gap:6px;text-align:left;min-height:42px;font-size:12px;color:#666}
+.itinerary-tools button svg{width:15px;height:15px}
+.itinerary-day summary:focus-visible,.itinerary-tools summary:focus-visible{outline:2px solid #e34159;outline-offset:2px;border-radius:4px}
+
+/* Generated work lives with the trip's materials, separately from saved sources. */
+.journey-results{margin:0 0 24px}
+.journey-results h2{font-size:13px;font-weight:600;margin:0 0 10px;color:#333}
+.journey-result-open{display:flex;align-items:center;gap:11px;width:100%;padding:14px;text-align:left;background:#fff;border:1px solid #e9ebe6;border-radius:12px;min-height:72px}
+.journey-result-icon{display:grid;place-items:center;width:34px;height:38px;background:#fff3f5;border-radius:7px;color:#db5267;flex-shrink:0}
+.journey-result-icon svg{width:20px;height:20px}
+.journey-result-copy{flex:1;min-width:0}
+.journey-result-copy strong{display:block;font-size:13px;line-height:1.6;font-weight:550;overflow-wrap:anywhere}
+.journey-result-copy small{display:block;font-size:10px;line-height:1.7;margin-top:3px;color:#888}
+.journey-result-open>svg{width:15px;height:15px;color:#999;flex-shrink:0}
+
+/* A quiet, explicit generation action beside the chat composer. */
+.composer-suggestions .composer-generate{display:inline-flex;align-items:center;gap:5px;border-color:#f1d7dd;color:#bf5267;background:#fff8fa;min-height:32px;padding:6px 11px;font-size:11px;flex-shrink:0}
+.composer-generate svg{width:14px;height:14px}
+.composer-suggestions .composer-generate:disabled{opacity:.45;cursor:default}
+.composer-generate:focus-visible{outline:2px solid #df526a;outline-offset:2px}
+
+/* The original question entry stays visually distinct from the personal guide. */
+.ask-diandian-mark{display:inline-block;width:18px;height:18px;flex-shrink:0;border-radius:55% 55% 55% 3px;background:linear-gradient(135deg,#ccf8ef 5%,#8ee4d6 95%);box-shadow:inset 0 0 3px #c8f8ef}
+.search-guide-invite .search-assistant-heading{gap:6px}
+.search-guide-invite .search-assistant-heading .dot-logo{width:26px;height:26px}
+.search-guide-invite .search-guide-identity{min-width:0;font-size:11px;line-height:1.5;color:#777}
+.search-guide-invite .search-assistant-top{gap:8px}
+.search-guide-invite .red-btn{padding:6px 10px;font-size:11px;min-height:30px}
+.search-guide-invite .search-guide-title{font-size:16px;font-weight:600;line-height:1.5;color:#333;margin:9px 0 5px;overflow-wrap:anywhere}
+.search-guide-invite p{display:block;overflow:visible;font-size:12px;line-height:1.75;margin:0;color:#555}
+.search-guide-invite .search-guide-continuity{color:#777;margin-top:2px}
+.search-guide-invite .search-assistant-shortcuts{margin-top:10px;flex-wrap:wrap}
+
+.assistant-bubble p.journey-save-relation{margin:6px 0 0;font-size:12px;line-height:1.9;color:#666}
+
+.user-bubble .search-question-origin{display:block;font-size:10px;line-height:1.6;margin-bottom:3px;color:#875f6c}
+
+/* An illustrated itinerary, using only this trip's saved source material. */
+.chat-plan{min-width:0}
+.chat-plan-heading{display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:10px}
+.chat-plan-heading h3{font-size:15px;line-height:1.5;margin:0;color:#333}
+.chat-plan-heading small{font-size:9px;color:#888;white-space:nowrap}
+.chat-plan .chat-plan-rationale{font-size:12px;line-height:1.9;margin:0 0 22px;color:#555}
+.chat-plan-days{list-style:none;margin:0;padding:0}
+.chat-plan-days>li{padding:0;margin:0 0 24px;min-width:0}
+.chat-plan-days h4{margin:0}
+.chat-plan-day-title{display:flex;align-items:baseline;gap:7px;width:100%;padding:0;text-align:left;color:#333;font-size:13px;font-weight:650;line-height:1.8;overflow-wrap:anywhere}
+.chat-plan-day{flex-shrink:0;font-weight:700}
+.chat-plan .chat-plan-day-text{font-size:12px;line-height:1.95;margin:9px 0 11px;color:#555}
+.chat-plan-media{display:grid;gap:12px 8px;align-items:start;margin-top:10px;min-width:0}
+.chat-plan-media.columns-1{grid-template-columns:minmax(0,1fr)}
+.chat-plan-media.columns-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.chat-plan-media.columns-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.chat-plan-material{min-width:0}
+.chat-plan-image{display:block;width:100%;padding:0;text-align:left}
+.chat-plan-image .cover{display:block;width:100%;height:auto;aspect-ratio:1;border-radius:11px;overflow:hidden}
+.chat-plan-media.columns-1 .cover{aspect-ratio:16/9}
+.chat-plan-image .cover img{display:block;width:100%;height:100%;object-fit:cover}
+.chat-plan-image .poster{height:100%;min-height:0;padding:8px}
+.chat-plan-image .poster strong{font-size:14px;line-height:1.3}
+.chat-plan-image .poster small,.chat-plan-image .poster em{font-size:8px}
+.chat-plan-post-title{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;width:100%;margin-top:6px;padding:0;text-align:left;font-size:10px;line-height:1.7;color:#555}
+.chat-plan-source-bubbles{display:flex;flex-direction:column;gap:7px;margin-top:8px}
+.chat-plan-source-bubble{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:2px;width:100%;min-width:0;padding:7px 8px;border-radius:8px;background:#f1f6f2;color:#57735d;font-size:9px;line-height:1.6;text-align:left;overflow-wrap:anywhere}
+.chat-plan-source-bubble:first-child:before{content:"";position:absolute;top:-4px;left:12px;width:8px;height:8px;background:#f1f6f2;transform:rotate(45deg)}
+.chat-plan-source-excerpt{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;color:#6c7c6f;font-size:9px}
+.chat-plan-pending,.chat-plan-source-missing{display:block;margin-top:8px;color:#95816c;font-size:9px;line-height:1.8}
+.chat-plan-actions{display:flex;gap:8px;margin-top:2px}
+.chat-plan-actions button{font-size:11px;line-height:1.6;min-height:34px;padding:7px 10px;border-radius:7px;color:#666}
+.chat-plan-actions button:first-child{border:1px solid #f0d8df;background:#fff8fa;color:#bd5269}
+.chat-plan .chat-plan-disclaimer{font-size:9px;line-height:1.8;color:#999;margin:10px 0 0}
+.chat-plan button:focus-visible{outline:2px solid #df526a;outline-offset:2px}

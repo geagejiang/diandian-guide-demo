@@ -1,0 +1,49 @@
+/* Note sharing: choose a recipient, then write a remark and send. */
+.sheet.note-share-sheet{padding:0 0 23px;border-radius:17px 17px 0 0;background:#f6f6f6;max-height:86%;}
+.note-share-sheet .sheet-handle{display:none;}
+.note-share-sheet .sheet-head{padding:14px 17px 8px;min-height:52px;position:relative;justify-content:center;}
+.note-share-sheet .sheet-head h2{font-size:16px;font-weight:500;color:#333;}
+.note-share-sheet .sheet-head>button{position:absolute;right:13px;top:13px;color:#333;width:27px;height:27px;}
+.note-share-sheet .sheet-head>button svg{width:21px;height:21px;}
+.native-recipients{display:flex;gap:15px;overflow-x:auto;scrollbar-width:none;padding:12px 15px 17px;align-items:flex-start;}
+.native-recipient{width:57px;flex-shrink:0;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center;}
+.recipient-avatar{width:51px;height:51px;border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;flex-shrink:0;font-size:19px;}
+.recipient-avatar.assistant-avatar{background:#fff;border:1px solid #e8eeeb;}
+.assistant-avatar .dot-logo{width:31px;height:31px;box-shadow:none;}
+.recipient-ai{position:absolute;right:-2px;top:-3px;background:#edf6f3;color:#609d8c;font-style:normal;font-size:7px;padding:1px 3px;border:1px solid #f6f6f6;border-radius:4px;}
+.recipient-name{font-size:10px;color:#888;line-height:1.5;width:66px;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;}
+.recipient-photo{display:block;width:100%;height:100%;border-radius:50%;overflow:hidden;background:#eee;}
+.recipient-photo img{display:block;width:100%;height:100%;object-fit:cover;}
+.recipient-group-photo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));gap:1px;background:#fff;}
+.create-avatar{background:#fff;color:#8a9a91;border:1px solid #eee;}
+.recipient-check{position:absolute;right:-2px;bottom:-1px;width:18px;height:18px;background:#fff;border:1px solid #dcdcdc;border-radius:50%;display:grid;place-items:center;color:transparent;box-shadow:0 0 0 2px #f6f6f6;}
+.recipient-check svg{width:12px;height:12px;stroke-width:2.5;}
+.recipient-check.checked{background:#ff2442;border-color:#ff2442;color:#fff;}
+.native-recipient.chosen .recipient-avatar:before{content:"";position:absolute;inset:0;background:#fff4;border-radius:50%;}
+.native-share-row{display:flex;gap:17px;overflow-x:auto;scrollbar-width:none;border-top:1px solid #eaeaea;padding:12px 15px 13px;}
+.native-share-option{width:51px;flex-shrink:0;display:flex;flex-direction:column;align-items:center;gap:9px;}
+.native-share-option>span:last-child{font-size:10px;line-height:1.5;white-space:nowrap;color:#888;}
+.native-share-icon{width:51px;height:51px;display:grid;place-items:center;border-radius:50%;color:#fff;}
+.native-share-icon>svg{width:27px;height:27px;stroke-width:2;}
+.channel-red{background:#ff2442;}
+.channel-green{background:#0ec967;}
+.channel-lime{background:#87d700;}
+.channel-blue{background:#1ab5ed;}
+.channel-yellow{background:#ffcb04;}
+.channel-orange{background:#f45a3e;}
+.tool-white{background:#fff;color:#333;}
+.tool-white .dot-logo{height:26px;width:26px;}
+.share-compose-area{padding:8px 13px 0;}
+.share-compose-box{background:#fff;min-height:124px;border-radius:12px;padding:14px;display:flex;gap:13px;align-items:flex-start;}
+.share-compose-box textarea{min-height:93px;flex:1;width:0;padding:0;resize:none;background:#fff;border:0;font-size:12px;line-height:1.9;color:#444;}
+.share-compose-box textarea::placeholder{color:#c7c7c7;}
+.share-compose-thumb{width:48px;height:64px;flex-shrink:0;border-radius:3px;overflow:hidden;}
+.share-compose-thumb .cover{height:100%;width:100%;}
+.share-compose-thumb .poster{padding:5px;}
+.share-compose-thumb .poster strong{font-size:10px;letter-spacing:0;}
+.share-compose-thumb .poster small,.share-compose-thumb .poster em{display:none;}
+.native-share-send{width:100%;height:41px;border-radius:24px;background:#ff2442;color:#fff;font-size:15px;margin-top:22px;font-weight:500;}
+.share-fragment{padding:0 6px 9px;color:#999;}
+.share-fragment>span{font-size:8px;}
+.share-fragment p{font-size:10px;line-height:1.6;margin:4px 0 0;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;}
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
